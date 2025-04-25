@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-['Inter'] bg-gray-50 text-gray-800">
-    <!-- Header Section -->
+    <!-- Header Section with Profile Image -->
     <header class="min-h-screen flex flex-col justify-center px-6 sm:px-12 md:px-24 relative">
         <nav class="absolute top-0 left-0 right-0 py-8 px-6 sm:px-12 md:px-24 flex justify-between items-center">
             <div class="text-xl font-medium">DL</div>
@@ -28,10 +28,12 @@
         </nav>
         
         <div class="mt-16 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <!-- Profile Image - Centered and responsive -->
             <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto md:mx-0">
                 <img src="picture/profilepic.png" alt="Dasuni Livera" class="w-full h-full object-cover hover:scale-105 transition duration-500">
             </div>
             
+            <!-- Text Content -->
             <div class="text-center md:text-left mt-8 md:mt-0">
                 <p class="text-lg text-gray-500 mb-2">Hi, my name is</p>
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Dasuni Livera.</h1>
@@ -46,19 +48,179 @@
         </div>
     </header>
 
-    <!-- About/Skills/Projects Sections (Keep your existing content) -->
-    <!-- ... -->
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 sm:px-12 md:px-24 bg-white fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-2">About Me</h2>
+            <div class="w-20 h-1 bg-black mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="mb-6">I'm a dedicated Software Engineering student pursuing an HND at IDM Campus, with plans to start a Bachelor's degree in 2026. Passionate about technology and problem-solving, I bring foundational programming skills, freelance experience on Fiverr, and a commitment to delivering high-quality work.</p>
+                    <p>My goal is to contribute to innovative software projects while continuously learning and adapting to new technologies. I'm available to work on-site in Colombo, Sri Lanka.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Education</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-medium">Higher National Diploma in Software Engineering</h4>
+                            <p class="text-gray-500">IDM Campus, Sri Lanka</p>
+                            <p class="text-sm text-gray-400">2024 - Present</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Ordinary Level</h4>
+                            <p class="text-gray-500">Holy Angels Girls' College, Dankotuwa</p>
+                            <p class="text-sm text-gray-400">2015 - 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Updated Contact Section -->
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 sm:px-12 md:px-24 bg-gray-50 fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-2">Skills</h2>
+            <div class="w-20 h-1 bg-black mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Programming: Java, Python, C++</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Web: HTML, CSS, JavaScript</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Tools: Git, SQL, VS Code</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Concepts: SDLC, Version Control</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Professional Skills</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Problem Solving</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Team Collaboration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Attention to Detail</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Client Communication</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 sm:px-12 md:px-24 bg-white fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-2">Projects</h2>
+            <div class="w-20 h-1 bg-black mb-8"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-2">Inventory Management System</h3>
+                    <p class="text-gray-500 text-sm mb-4">IDM Campus | Jan 2024 - Mar 2024</p>
+                    <p class="mb-4">Developed a basic inventory management tool using Python and SQL with features for data entry and retrieval.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">SQL</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Data Structures</span>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-2">Personal Portfolio Website</h3>
+                    <p class="text-gray-500 text-sm mb-4">Self-Initiated | Apr 2024 - May 2024</p>
+                    <p class="mb-4">Built a personal website using HTML/CSS to showcase freelance work and projects, with Git version control.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 sm:px-12 md:px-24 bg-gray-50 fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-2">Experience</h2>
+            <div class="w-20 h-1 bg-black mb-8"></div>
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="border-l-2 border-black pl-6">
+                    <h3 class="text-xl font-semibold">Freelance Developer (Fiverr)</h3>
+                    <p class="text-gray-500">2023 - Present</p>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Managed a Fiverr account offering basic website development and data entry services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Completed projects for international clients, meeting tight deadlines</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Developed client communication and problem-solving skills</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="border-l-2 border-black pl-6">
+                    <h3 class="text-xl font-semibold">Volunteer Technology Mentor</h3>
+                    <p class="text-gray-500">Local Community Center | Jan 2024 - Mar 2024</p>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Provided computer skills training to students</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Organized tech workshops to promote digital literacy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">•</span>
+                            <span>Supported development of a simple database system using SQL</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 sm:px-12 md:px-24 bg-white fade-in">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold mb-2">Get In Touch</h2>
             <div class="w-20 h-1 bg-black mb-8"></div>
-            <p class="mb-8 max-w-lg">Feel free to reach out for collaboration or opportunities. I'll respond within 24 hours.</p>
+            <p class="mb-8 max-w-lg">Feel free to reach out for collaboration or opportunities. I'm currently looking for internship opportunities to further develop my skills.</p>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
                     <ul class="space-y-4">
                         <li class="flex items-start">
                             <i class="fas fa-envelope mr-4 mt-1"></i>
@@ -70,61 +232,31 @@
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mr-4 mt-1"></i>
-                            <span>Kalpitiya, Sri Lanka</span>
+                            <span>Kalpitiya, Sri Lanka | Available in Colombo</span>
                         </li>
                     </ul>
                     
                     <div class="mt-8 flex space-x-6">
-                        <a href="https://github.com/Daszz06" target="_blank" class="text-2xl hover:text-gray-600 transition">
+                        <a href="https://github.com/Daszz06" target="_blank" rel="noopener noreferrer" class="social-icon github text-2xl hover:text-gray-600 transition">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com/in/dasuni-livera-801677347" target="_blank" class="text-2xl hover:text-gray-600 transition">
+                        <a href="https://linkedin.com/in/dasuni-livera-801677347" target="_blank" rel="noopener noreferrer" class="social-icon linkedin text-2xl hover:text-gray-600 transition">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://twitter.com/livera_dasuni_" target="_blank" class="text-2xl hover:text-gray-600 transition">
+                        <a href="https://twitter.com/livera_dasuni_" target="_blank" rel="noopener noreferrer" class="social-icon twitter text-2xl hover:text-gray-600 transition">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
                 </div>
                 
-                <!-- Working Contact Form -->
+                <!-- Updated Form with Formspree -->
                 <div>
-                    <form 
-                        action="https://formspree.io/f/YOUR_FORMSPREE_ID" 
-                        method="POST"
-                        class="space-y-4"
-                    >
-                        <input 
-                            type="text" 
-                            name="name"
-                            placeholder="Your Name" 
-                            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black"
-                            required
-                        >
-                        <input 
-                            type="email" 
-                            name="_replyto"
-                            placeholder="Your Email" 
-                            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black"
-                            required
-                        >
-                        <textarea 
-                            name="message"
-                            placeholder="Your Message" 
-                            rows="4" 
-                            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black"
-                            required
-                        ></textarea>
-                        <button 
-                            type="submit" 
-                            class="px-6 py-3 bg-black text-white rounded hover:bg-gray-800 transition"
-                        >
-                            Send Message
-                        </button>
+                    <form action="https://formspree.io/f/xanonqll" method="POST" class="space-y-4">
+                        <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black" required>
+                        <input type="email" name="_replyto" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black" required>
+                        <textarea name="message" placeholder="Your Message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black" required></textarea>
+                        <button type="submit" class="px-6 py-3 bg-black text-white rounded hover:bg-gray-800 transition">Send Message</button>
                     </form>
-                    <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded">
-                        Thank you! Your message has been sent.
-                    </div>
                 </div>
             </div>
         </div>
@@ -137,13 +269,16 @@
             <p class="text-gray-400 mb-6">Software Engineering Student</p>
             
             <div class="flex justify-center space-x-6 mb-6">
-                <a href="https://github.com/Daszz06" target="_blank" class="text-xl hover:text-gray-300 transition">
+                <a href="https://github.com/Daszz06" target="_blank" rel="noopener noreferrer" class="social-icon github text-xl hover:text-gray-300 transition">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/dasuni-livera-801677347" target="_blank" class="text-xl hover:text-gray-300 transition">
+                <a href="https://linkedin.com/in/dasuni-livera-801677347" target="_blank" rel="noopener noreferrer" class="social-icon linkedin text-xl hover:text-gray-300 transition">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:dasunilivera5@gmail.com" class="text-xl hover:text-gray-300 transition">
+                <a href="https://twitter.com/livera_dasuni_" target="_blank" rel="noopener noreferrer" class="social-icon twitter text-xl hover:text-gray-300 transition">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:dasunilivera5@gmail.com" class="social-icon email text-xl hover:text-gray-300 transition">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -155,24 +290,7 @@
     </footer>
 
     <script>
-        // Form submission handler
-        const form = document.querySelector('form');
-        if (form) {
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form),
-                    headers: { 'Accept': 'application/json' }
-                });
-                if (response.ok) {
-                    form.reset();
-                    document.getElementById('form-success').classList.remove('hidden');
-                }
-            });
-        }
-
-        // Fade-in animation
+        // Fade-in animation on scroll
         const sections = document.querySelectorAll('.fade-in');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -181,6 +299,7 @@
                 }
             });
         }, { threshold: 0.1 });
+
         sections.forEach(section => observer.observe(section));
     </script>
 </body>
