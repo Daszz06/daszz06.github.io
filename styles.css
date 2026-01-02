@@ -1,86 +1,77 @@
-/* Base Styles */
-body {
-    color: #333;
-    line-height: 1.6;
+canvas#bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
 }
 
-/* Typography */
-h1, h2, h3 {
-    line-height: 1.2;
+.section {
+  padding: 6rem 1.5rem;
+  max-width: 1100px;
+  margin: auto;
 }
 
-/* Navigation */
-.nav-link {
-    position: relative;
-    padding-bottom: 4px;
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: black;
-    transition: width 0.3s ease;
+.section-text {
+  max-width: 700px;
+  color: #555;
 }
 
-.nav-link:hover::after {
-    width: 100%;
+.skill-card {
+  padding: 2rem;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.4s;
 }
 
-/* Profile Image */
-.profile-image-container {
-    transition: transform 0.3s ease;
+.skill-card:hover {
+  transform: translateY(-10px);
 }
 
-.profile-image-container:hover {
-    transform: scale(1.03); /* Subtle zoom effect instead of rotation */
-}
-
-/* Project Cards */
 .project-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 16px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: rotateY(8deg) rotateX(4deg) scale(1.05);
 }
 
-/* Section spacing */
-section {
-    padding: 80px 0;
+.project-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-/* Fade-in animation */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+.project-card span {
+  font-size: 0.9rem;
+  color: #666;
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* Social Icons */
-.social-icon {
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+.experience-card {
+  border-left: 4px solid black;
+  padding-left: 1.5rem;
 }
 
-.social-icon:hover {
-    transform: translateY(-3px);
+.contact-box {
+  max-width: 500px;
 }
 
-/* Platform-specific hover colors */
-.github:hover { color: #333 !important; }
-.linkedin:hover { color: #0A66C2 !important; }
-.twitter:hover { color: #1DA1F2 !important; }
-.email:hover { color: #D44638 !important; }
+.socials a {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: black;
+}
+
+.socials a:hover {
+  opacity: 0.6;
+}
